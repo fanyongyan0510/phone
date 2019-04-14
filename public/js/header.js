@@ -112,7 +112,7 @@ function index(){
             document.getElementById("in-ul5").innerHTML=ehtml;
         }
     }
-    var url='http://127.0.0.1:5100/product/index';
+    var url='/product/index';
     xhr.open('get',url,true);
     xhr.send(null);
 }

@@ -3,7 +3,7 @@ $(function(){
     if(location.search!==""){
         var lid=location.search.split("=")[1];
         $.ajax({
-            url:"http://127.0.0.1:5100/product/details",
+            url:"/product/details",
             type:"get",
             data:{lid},
             dataType:"json",

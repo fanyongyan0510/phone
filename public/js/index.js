@@ -24,7 +24,7 @@ function add(){
 	    }
        
 	} 
-	var url='http://127.0.0.1:5100/product/carousel';
+	var url='/product/carousel';
     xhr.open('get',url,true);
     xhr.send(null);
 }     
@@ -194,7 +194,7 @@ function index(){
            div2.innerHTML=fhtml;
         }
     }
-    var url='http://127.0.0.1:5100/product/index';
+    var url='/product/index';
     xhr.open('get',url,true);
     xhr.send(null);
 }

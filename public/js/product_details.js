@@ -4,7 +4,7 @@ $(function(){
     if(location.search!==""){
         
         $.ajax({
-            url:"http://127.0.0.1:5100/product/details",
+            url:"/product/details",
             type:"get",
             data:{lid},
             dataType:"json",
