@@ -24,8 +24,7 @@ function add(){
 	    }
        
 	} 
-	var url='/product/carousel';
-    xhr.open('get',url,true);
+    xhr.open('get','/product/carousel',true);
     xhr.send(null);
 }     
 add(); 
@@ -194,8 +193,7 @@ function index(){
            div2.innerHTML=fhtml;
         }
     }
-    var url='/product/index';
-    xhr.open('get',url,true);
+    xhr.open('get','/product/index',true);
     xhr.send(null);
 }
 index();

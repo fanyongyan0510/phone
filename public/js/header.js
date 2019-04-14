@@ -112,8 +112,7 @@ function index(){
             document.getElementById("in-ul5").innerHTML=ehtml;
         }
     }
-    var url='/product/index';
-    xhr.open('get',url,true);
+    xhr.open('get','/product/index',true);
     xhr.send(null);
 }
 index();
