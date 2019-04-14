@@ -1,0 +1,28 @@
+{
+  "name": "phone",
+  "version": "1.0.0",
+  "description": "phone",
+  "main": "index.js",
+  "scripts": {
+    "test": "phone",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanyongyan0510/phone.git"
+  },
+  "keywords": [
+    "fyy"
+  ],
+  "author": "phone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fanyongyan0510/phone/issues"
+  },
+  "homepage": "https://github.com/fanyongyan0510/phone#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mysql": "^2.16.0"
+  }
+}
