@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/product_details.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+
+</head>
+<body  >
+
+    <div class="container">
+        <!--页头-->
+        <!--页头-->
+	    <header id="top">
+        <section class="navbar" data-target="navbar">
+            <!--<div></div>-->
+			<span class=""></span>
+        </section>
+        <section>
+            <!-- LongGo-->
+            <div >
+            	<a class="logo" href="index.html"></a>
+            </div>
+        </section>
+
+        <!-- 内容-->
+        <div class="fade bb">
+            <ul class="top_ul ">
+                <li class="down" data-toggle="dropdown">
+                    <span>HUAWEI系列</span>
+                    <div class="drop pp">
+                        
+                        <ul id="in-ul1" class="p-ul">
+                            	
+                        </ul>
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>VIVO系列</span>
+                    <div class="drop pp " >
+                    	
+                        	<ul id="in-ul2" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>OPPO系列</span>
+                       <div class="drop pp " >
+                    	
+                        	<ul id="in-ul3" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>小米系列</span>
+                	          <div class="drop pp " >
+                    	
+                        	<ul id="in-ul4" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+
+                   
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>魅族系列</span>
+                              <div class="drop pp " >
+                    	
+                        	<ul id="in-ul5" class="p-ul">
+                            	
+                        
+                    </div>
+                </li>
+                <li class="down">
+                <a href="products.html" target="_blank">全部</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 文件包-->
+        <section id='lli'>
+            <div id="limg">
+                <!--<img  src="img/bgimage3/icon-common.png" alt="" />-->
+
+            </div>            
+            <div id='login_a'>
+            	<a href="javascript:;" data-sou="sousuo">搜索</a>
+            	<a href="cart.html">购物车</a>
+            	<a href="personal.html">个人中心</a>
+                <a>登录</a>
+            </div>
+        </section>
+        <!--搜索-->
+        <div class="sousuoBox" id="sousuoBox"></div>
+       	<div class="sousuo" id="sousuo">
+			<input class="sou-input" type="text" autofocus/>
+			<input  class="suo-input" type="submit" data-suo="suo"/ value="搜索">
+		</div>
+    </header>
+
+        <!-- 参数和概览导航-->
+        <nav id='navv' class="nav">
+            
+        </nav>
+
+        <div id="section">
+            <!-- 左侧图片-->
+            <div class="left">
+                <!--<div class="position-relative">-->
+                	<div class="par">
+                		<div class="big_img">
+                        	<img id="mdImg" src="" alt=""/>
+                    	</div>
+                    	 <!-- 放大镜-->
+                    	<div id="mask" class="d-none position-absolute"></div>
+                    	<!-- 中图片上覆盖一层，用作点击事件-->
+                   		<div id="super-mask" class="position-absolute"></div>
+                   		
+                    	   <!-- 大图-->
+                    	<div id="div-lg" class="d-none position-absolute"></div>
+                	</div>
+                    
+                  
+                    	
+                    
+                   
+                  
+                 
+                <!--</div>-->
+
+                <div class="small_img " id="smImg">
+                    <ul class="small_ul">
+                       
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧商品详情-->
+            <div id="pro" class="right">
+                <div class="right_top">
+                    <h2>华为 HUAWEI nova 4 4800万超广角三摄 高配 全网通版(苏音蓝)</h2>
+                    <h4>
+                        <p></p>
+                    </h4>
+                    <h2></h2>
+                </div>
+                <div class="right_middle">
+                    <div class="right_color">
+                        <p>规格</p>
+                        <div class="right_color_a">
+                           <div><a class='${color.lid==lid? 'active':''}' href="product_details.html?lid=${color.lid}">
+                            <span>${color.color}-${color.spec}</span>
+                        </a></div>
+                        </div>
+                    </div>
+                    <div class="right_service"></div>
+                    <div class="right_count">
+                        <p>选择数量</p>
+                        <a class="right_count_a">
+                        	<button type="button" data-btn='but' id="but">
+                        		<i>-</i>
+                        		<span>1</span>
+                        		<i>+</i>
+                        	</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="right_bottom">
+                	<div>
+	                	<div class="alert">
+	                		<div class="cancel">X</div>
+	                		<p>未登录,登陆后方能加入购物车</p>
+	                		<div class="cart-login">
+	                			<p>取消</p>
+	                			<a href="user_login.html">去登陆</a>
+	                		</div>
+	                	</div>
+                	</div>
+                    <a href="javascript:cart()" data-cart="cart" id="cart" @onclick="cc()">加入购物车</a>
+                    <a href="">立即购买</a>
+                </div>
+           
+            </div>
+        </div>
+        <!-- 页面中间图片-->
+        <div class="middle">
+           
+        </div>
+        <footer id='footer'>
+	   <!--推荐，说明，在线客服-->
+		<section class="sec1">
+			 <!--推荐机型，服务支持等-->
+			 <div class="foot1">
+				<dl class="foot_ul2">
+						<dt data-toggle="a">推荐机型
+							<b class="b1">+</b>
+						</dt>
+						<dd>
+							<a href="">HUAWEI nova4</a>
+						</dd>
+						<dd>
+							<a href="">OPPO R17</a>
+						</dd>
+						<dd>
+							<a href="">Find X</a>
+						</dd>
+						<dd>
+							<a href="">Z3</a>
+						</dd>
+
+					</dl>
+
+				<dl class="foot_ul2">
+					<dt data-toggle="b">服务支持
+						<b class="b2">+</b>
+					</dt>
+					<dd>
+						<a href="">售后政策</a>
+					</dd>
+						<dd>
+							<a href="">自助服务</a>
+						</dd>
+						<dd>
+							<a href="">零配件价格查询</a>
+						</dd>
+						<dd>
+							<a href="">官方授权网店</a>
+						</dd>
+				   </dl>
+					<dl class="foot_ul2">
+						<dt data-toggle="c">关注我们
+							<b class="b3">+</b>
+						</dt>
+						<dd>
+							<a href="">官方微信</a>
+						</dd>
+						<dd>
+							<a href="">新浪微博</a>
+						</dd>
+						<dd>
+							<a href="">在线服务</a>
+						</dd>
+						<dd>
+							<a href="">联系我们</a>
+						</dd>
+				   </dl>
+				   <dl class="foot_ul2">
+						<dt data-toggle="d">商务合作
+							<b class="b4">+</b>
+						</dt>
+						<dd>
+							<a href="">知识产权</a>
+						</dd>
+						<dd>
+							<a href="">开放平台</a>
+						</dd>
+						<dd>
+							<a href="">采购相关</a>
+						</dd>
+						<dd>
+							<a href="">政企服务</a>
+						</dd>
+				   </dl>
+			 </div>
+			<!--在线客服-->
+			<div class="foot2">
+				<div>在线客服</div>
+				<section>
+					<h2>4001-666-888</h2>
+					<p>24 小时全国热线</p>
+				</section>
+
+			</div>
+		</section>
+		<!--版权-->
+		<section class='sec2'>
+			<h3>
+				© 20015 - 2019 FYY 版权所有 豫ICP备08160823号-1 | 隐私政策 | 用户使用协议 | 联系方式：4001-888-888
+			</h3>
+		</section>
+	</footer>
+    </div>
+
+    <!--<iframe src="footer.html" width="100%" height="970" frameborder="0"></iframe>-->
+    <script>
+    
+    	
+    	//大图
+//  	var smImg=document.getElementById("smImg");
+//  	var img=smImg.getElementsByTagName("img")
+//  	var divLg=document.getElementById("div-lg");
+//  	for (var i=0;i<img.length;i++){
+//    img[i].bb=i;
+//    img[i].onmousemove=function(){
+//        switch(this.bb){
+//            case 0:divLg.style.background='url("img/product/lg/800_800_1544693956003mp.png") no-repeat 800px 800px';
+//            break;
+//            case 1:divLg.style.background='url("img/product/lg/800_800_1544693879385.jpg") no-repeat';
+//            break;
+//            case 2:divLg.style.background='url("img/product/lg/800_800_1544693885268.jpg") no-repeat';
+//            break;
+//            case 3:divLg.style.background='url("img/product/lg/800_800_1544693895467.jpg") no-repeat';
+//            break;
+//        }
+//    }
+//}
+//      <!-- 放大镜-->
+//      <!--var mask=document.getElementById("mask");
+//      var smask=document.getElementById("super-mask");
+//      var divLg=document.getElementById("div-lg");
+//      //鼠标进入supermask,显示遮罩层和大图片
+//      // 鼠标移出supermask，隐藏遮罩层和大图片
+//      smask.onmouseover=function(){
+//          mask.className="position-absolute";
+//          divLg.className="position-absolute";
+//      }
+//      smask.onmouseout=function(){
+//          mask.className="position-absolute d-none";
+//          divLg.className="position-absolute d-none";
+//      }
+//      //mask跟随鼠标移动，并同步移动大div的背景图片位置
+//      var maxX=238;
+//      var maxY=238;
+//      smask.onmousemove=function(e){
+//      	var e=e;
+//          var left= e.offsetX-119;
+//          var top= e.offsetY-119;
+//          if(left<0){
+//              left=0;
+//          }else if(left>maxX){
+//              left=maxX;
+//          }
+//          if(top<0){
+//              top=0;
+//          }else if(top>maxY){
+//              top=maxY;
+//          }
+//          mask.style.left=left+"px";
+//          mask.style.top=top+"px";
+//          divLg.style.backgroundPositionX=(-13/9*left)+"px";
+//          divLg.style.backgroundPositionY=(-13/9*top)+"px";
+//      }
+//
+//      <!-- 页头上的图片-->
+//      <!--//获取所有的a标签
+//      var alA=document.getElementById("smImg").getElementsByTagName("a");
+//      //循环遍历所有a标签
+//      for(var i=0;i<alA.length;i++){
+//          //为a设置点击事件
+//          alA[i].onmousemove=function(){
+//              //把a标签中的href 中存储的图片路径给需要展示图片的标签。
+//              document.getElementById("mdImg").src=this.href;
+//              //阻止a链接的默认跳转。
+//              return false;
+//          }
+//      }
+
+    </script>
+    <script src="js/jquery-3.2.1.js"></script>
+  <!--  <script src="js/footer.js"></script>-->
+    <script src="js/header.js"></script>
+    <script src="js/product_details.js"></script>
+   	<script src="js/footer.js"></script>
+    <!--<script src="js/ajax.js"></script>-->
+</body>
+</html>

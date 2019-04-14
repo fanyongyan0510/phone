@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+				 <meta name="viewport" content="width=device-width,initial-scale=1">
+		<title></title>
+
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/personal.css" />
+	</head>
+	<body>
+		<div class="container">
+		<!--页头-->
+	    <header id="top">
+        <section class="navbar" data-target="navbar">
+            <!--<div></div>-->
+			<span class=""></span>
+        </section>
+        <section>
+            <!-- LongGo-->
+            <div >
+            	<a class="logo" href="index.html"></a>
+            </div>
+        </section>
+
+        <!-- 内容-->
+        <div class="fade bb">
+            <ul class="top_ul ">
+                <li class="down" data-toggle="dropdown">
+                    <span>HUAWEI系列</span>
+                    <div class="drop pp">
+                        
+                        <ul id="in-ul1" class="p-ul">
+                            	
+                        </ul>
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>VIVO系列</span>
+                    <div class="drop pp " >
+                    	
+                        	<ul id="in-ul2" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>OPPO系列</span>
+                       <div class="drop pp " >
+                    	
+                        	<ul id="in-ul3" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>小米系列</span>
+                	          <div class="drop pp " >
+                    	
+                        	<ul id="in-ul4" class="p-ul">
+                            	
+                        	</ul>
+                    
+                        
+                    </div>
+
+                   
+                </li>
+                <li class="down" data-toggle="dropdown">
+                    <span>魅族系列</span>
+                              <div class="drop pp " >
+                    	
+                        	<ul id="in-ul5" class="p-ul">
+                            	
+                        
+                    </div>
+                </li>
+                <li class="down">
+                <a href="products.html" target="_blank">全部</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 文件包-->
+        <section id='lli'>
+            <div id="limg">
+                <!--<img  src="img/bgimage3/icon-common.png" alt="" />-->
+
+            </div>            
+            <div id='login_a'>
+            	<a href="javascript:;" data-sou="sousuo">搜索</a>
+            	<a href="cart.html">购物车</a>
+            	<a href="personal.html">个人中心</a>
+                <a>登录</a>
+            </div>
+        </section>
+       <!--搜索-->
+        <div class="sousuoBox" id="sousuoBox"></div>
+       	<div class="sousuo" id="sousuo">
+			<input class="sou-input" type="text" autofocus/>
+			<input  class="suo-input" type="submit" data-suo="suo"/ value="搜索">
+		</div>
+    </header>
+
+			<div id="content">
+				<!--左侧-->
+				<div id="left">
+					<ul class="left-ul">
+						<!--<li>
+							<h3>我的订单</h3>
+						</li>-->
+						<li>
+							<h3 ><a href="javascript:;" data-toggle='tab' data-target='goods'>收货地址</a></h3>	
+						</li>
+						<li>
+							<h3 data-open="open" class="open" >账号管理</h3>
+							<ul>
+								<li class="li" ><a href="javascript:;" data-toggle='tab' data-target='pwd'>修改密码</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--右侧-->
+				<div class="add-right">
+					<div id='right'>
+					<!--我的订单-->
+					<div></div>
+					<!--收货地址-->
+					<div id="goods" class="op">
+						<!--收货地址-->
+						<div id="address"> 
+							<!--标题-->
+							<div class="section-header">
+								<h2>收货地址</h2>
+							</div>
+							<!--详情-->
+							<div  class="myAddress-edit">
+								<div id="every">
+									<table>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" id="name" placeholder="收货人"/>
+													<div></div>
+												</td>
+												
+												<td>
+													<input type="text" id="phone" placeholder="电话"/>
+													<div></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<select name="provs" id="select">
+										<option id="option">省份</option>
+										<option>河南省</option>
+										<option>北京市</option>
+										<option>天津市</option>
+										<option>河北省</option>
+										
+									</select>
+									
+									<select name="cities" id="select2" class="hide">
+										
+									</select>
+									
+									<select name="cities"id="select3"  class="hide">
+										
+									</select>
+									<div></div>
+									<div class="detailed">
+										<input type="text" id="address2" placeholder="详细地址"/>
+										<div></div>
+									</div>
+									<!--地址添加成功的提示-->
+									<div>
+								        <div class="pwdsuccess">
+								                		
+								            <p>恭喜您，地址添加成功</p>
+								            <div class="pwd-login">
+								                <p>确定</p>
+								                			
+								            </div>
+								        </div>
+						            </div>
+								</div>
+								
+								
+								<div class="default">
+									<input type="checkbox" />
+									<span>设为默认地址</span>
+								</div>
+								
+								<!--保存、取消-->
+								<div class="hold">
+									<button data-input="input"/>添加新地址</button>
+									<button data-kong="kong">清空</button>
+								</div>
+							</div>
+						</div>
+								<!--动态添加新地址-->
+						<div id="data">
+							<!--标题-->
+							<div class="data-header">
+								<table>
+									<thead>
+										<tr>
+											<th>收货人</th>
+											<th>收货地址</th>
+											<th>电话</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+							<!--地址-->
+							<div id="data-content">
+								<!--<table>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>-->
+							</div>
+						</div>
+						
+					</div>
+				
+					
+					<!--账号管理-->
+					<div id="pwd" class="no">
+						<h2>修改密码</h2>
+						<div>原密码</div>
+						<div>
+							<input type="password" id="upwd" name="upwd" placeholder="请输入原密码"/>
+							<div class="alert"></div>
+						</div>
+						<div>新密码</div>
+						<div>
+							<input type="password" id="upwd1" name="upwd1" placeholder="请输入新密码"/>
+							<div class="alert1"></div>
+						</div>
+						<div>
+							<input type="password" id="upwd2" name="upwd2" placeholder="请再次输入新密码"/>
+							<div class="alert2"></div>
+						</div>
+						<div>密码由6-20位数字、字母或符号组成</div>
+						<div>
+							<button class="btn-cancel" data-btn='btn'>取消</button>
+							<button class="btn-ok" data-bok='bok' onclick="pwd">确定</button>
+						</div>
+						<div>
+		                	<div class="pwdsuccess">
+		                		
+		                		<p>修改密码成功</p>
+		                		<div class="pwd-login">
+		                			<p>确定</p>
+		                			
+		                		</div>
+		                	</div>
+	                	</div>
+					</div>
+					
+					
+			 
+				</div>
+			</div>
+			</div>	
+			<footer id='footer'>
+	   <!--推荐，说明，在线客服-->
+		<section class="sec1">
+			 <!--推荐机型，服务支持等-->
+			 <div class="foot1">
+				<dl class="foot_ul2">
+						<dt data-toggle="a">推荐机型
+							<b class="b1">+</b>
+						</dt>
+						<dd>
+							<a href="">HUAWEI nova4</a>
+						</dd>
+						<dd>
+							<a href="">OPPO R17</a>
+						</dd>
+						<dd>
+							<a href="">Find X</a>
+						</dd>
+						<dd>
+							<a href="">Z3</a>
+						</dd>
+
+					</dl>
+
+				<dl class="foot_ul2">
+					<dt data-toggle="b">服务支持
+						<b class="b2">+</b>
+					</dt>
+					<dd>
+						<a href="">售后政策</a>
+					</dd>
+						<dd>
+							<a href="">自助服务</a>
+						</dd>
+						<dd>
+							<a href="">零配件价格查询</a>
+						</dd>
+						<dd>
+							<a href="">官方授权网店</a>
+						</dd>
+				   </dl>
+					<dl class="foot_ul2">
+						<dt data-toggle="c">关注我们
+							<b class="b3">+</b>
+						</dt>
+						<dd>
+							<a href="">官方微信</a>
+						</dd>
+						<dd>
+							<a href="">新浪微博</a>
+						</dd>
+						<dd>
+							<a href="">在线服务</a>
+						</dd>
+						<dd>
+							<a href="">联系我们</a>
+						</dd>
+				   </dl>
+				   <dl class="foot_ul2">
+						<dt data-toggle="d">商务合作
+							<b class="b4">+</b>
+						</dt>
+						<dd>
+							<a href="">知识产权</a>
+						</dd>
+						<dd>
+							<a href="">开放平台</a>
+						</dd>
+						<dd>
+							<a href="">采购相关</a>
+						</dd>
+						<dd>
+							<a href="">政企服务</a>
+						</dd>
+				   </dl>
+			 </div>
+			<!--在线客服-->
+			<div class="foot2">
+				<div>在线客服</div>
+				<section>
+					<h2>4001-666-888</h2>
+					<p>24 小时全国热线</p>
+				</section>
+
+			</div>
+		</section>
+		<!--版权-->
+		<section class='sec2'>
+			<h3>
+				© 20015 - 2019 FYY 版权所有 豫ICP备08160823号-1 | 隐私政策 | 用户使用协议 | 联系方式：4001-888-888
+			</h3>
+		</section>
+	</footer>
+		</div>
+	
+		<script src="js/footer.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/address.js"></script>
+		<script src="js/modify.js"></script>
+		
+	</body>
+</html>

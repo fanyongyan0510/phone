@@ -1,0 +1,401 @@
+	*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background:#eae8e8c7;
+			}
+			a{
+				text-decoration:none;
+			}
+			ul{
+				list-style:none;
+			}
+			input{
+				outline: none;
+			}
+			.hide{
+				display:none;
+			}
+			.container{
+				width: 100%
+			}
+			#content{
+				
+				width: 1220px;
+				margin:0 auto;
+				min-height:1200px;
+				
+			}
+			#left,#right{
+				margin:80px 0 0 0;
+				background: #fff;
+				
+			}
+			#left{
+				width: 300px;
+				float: left;
+				height: 1044px;
+				/*min-height: 100%;*/
+			}
+			#right{
+				float: right;
+				width: 905px;
+				
+			}
+			.add-right{
+				position:relative;
+				z-index: 1;
+			}
+			#left>ul{
+				width: 250px;
+				height: 500px;
+				text-align: center;
+				margin:0 auto;
+				/*display:flex;*/
+				/*flex-direction:column;
+				flex-wrap: nowrap;
+				justify-content: center;*/
+				
+			}
+		
+			#left>ul>li{
+				padding:25px 0;
+			}
+			#left>ul>li h3,#left ul li a{
+				color:#6b6a6a;
+			}
+			#left>ul>li h3{
+				cursor:pointer;
+			}
+			#left>ul ul{
+				position:relative;
+			}
+			#left .li{
+				position:absolute;
+				top:5%;
+				left:38%;
+			}
+			/*左侧*/
+			li ul{
+				display: block;
+				margin-top:20px;
+			}
+			li ul li{
+				color:#6b6a6a;
+			}
+			.open+ul{ display: none; }
+			.open{
+				background:url("img/index/icon-arrow.png") no-repeat 183px;
+			}
+			/*右侧*/
+		
+			.op{
+				display: block;
+			}
+			.no{
+				display: none;
+			}
+			#every{
+				position:relative;
+			}
+			#every input:focus,#pwd input:focus{
+				border:1px solid #000000
+			}
+			
+			table{
+				border-collapse: collapse;
+    			border-spacing: 0;
+			}
+			table tbody tr td input,.detailed input{
+				width: 235px;
+			}
+			table tbody tr td input,.detailed input,#pwd input{
+				
+				height: 40px;
+				padding: 3px 10px;
+				margin:20px 20px 45px;
+				border:1px solid #e2dfdf;
+				border-radius:5px;
+			}
+			table tbody tr td div,.detailed div{
+				color:red;
+				position:absolute;
+			}
+			table tbody tr td:first-child div:last-child{
+				top:26%;
+				left:11%;
+			}
+			table tbody tr td:last-child div:last-child{
+				top:26%;
+				left:45%;
+			}
+			.detailed div:last-child{
+				top:88%;
+				left:11%;
+			}
+			/*select{
+				background:url("../img/index/icon-arrow.png") no-repeat;
+			}*/
+			select{
+				width: 257px;
+				height: 48px;
+				padding:3px 10px;
+				margin:0 20px 20px ;
+				border:1px solid #e2dfdf;
+				border-radius:5px;
+				
+			}
+			#option{
+				margin:50px 0;
+			}
+			.default{
+				width: 257px;
+			}
+			
+			.default input{
+				width: 16px;
+				height: 16px;
+				border-radius:50%;
+				border:1px solid #e2dfdf;
+				display:inline-block;
+				margin:0 20px;
+				text-align: center;
+			}
+			.default span{
+				margin:0 20px 20px ;
+				display: inline-block;
+			}
+			.hold button{
+				box-sizing: border-box;
+				width: 257px;
+				height: 48px;
+				margin:0 20px 20px ;
+				display: inline-block;
+				background: #2ad181;
+				border:0;
+			}
+			.hold button:nth-child(2){
+				border:1px solid #E2DFDF;
+				line-height: 48px;
+				text-align: center;
+				background:none;
+			}
+			.hold button:first-child:hover,.btn-ok:hover{
+				background: rgba(47, 209, 135, 0.85);
+			}
+			.hold button:nth-child(2):hover{
+				background:#e2dfdf;
+			}
+			/*动态添加新地址*/
+			#data{
+				width: 900px;
+				border:1px solid #e2dfdf;
+				margin:100px auto 0; 
+				
+				
+			}
+			#data .data-header table thead{
+				background: #cccccc;
+			}
+			#data .data-header table thead tr th{
+				width: 230px;
+				height: 40px;
+				color:#888787;
+				
+			}
+			#data-content{
+				width: 900px;
+			}
+			#data-content table{
+				background: #eae8e87a;
+				margin:10px 0;
+			}
+			#data-content table tbody tr td{
+				width: 230px;
+				height: 35px;
+				color:#888787d4;
+				text-align: center;
+				
+
+			}
+			#data-content table tbody tr td:last-child{
+				cursor: pointer;
+			}
+			/*修改密码*/
+			#pwd{
+				width: 500px;
+				margin: 0 auto;
+				position:relative;
+			}
+			#pwd h2{
+				color:#6b6a6a;
+				margin: 40px 0;
+				text-align: center;
+				
+			}
+			#pwd input{
+				width: 428px;
+				border-radius:10px;
+			}
+			.btn-cancel{
+				border:0;
+				color:#2ad181;
+				background:#dff8ec ;
+			}
+			.btn-ok{
+				color:#fff;
+				background:#2ad181 ;
+				border:0;
+			}
+			#pwd button{
+				width: 228px;
+				height: 50px;
+				border-radius:9px;
+				margin:30px 4px 50px ;
+			}
+			#pwd .alert,#pwd .alert1,#pwd .alert2{
+				color:red;
+				position:absolute;
+				
+			}#pwd .alert{
+				top:29%;
+				left:20%;
+			}
+			#pwd .alert1{
+				top:53%;
+				left:20%;
+			}
+			#pwd .alert2{
+				top:69%;
+				left:20%;
+			}
+			/*收货地址添加成功*/
+			.opacitys{
+				width: 2000px;
+				height: 2000px;
+				position: absolute;
+				top:-59%;
+				left:-82%;
+				z-index: 2000;
+				background: rgba(78, 78, 78, 0.52);
+			}
+			.pwdsuccesss{
+				width: 600px;
+				height:428px;
+				position:absolute;
+				top:15%;
+				left:35%;
+				display: none;
+				background: #ddd;
+			}
+			/*提示文字*/
+			#every .pwdsuccess>p{
+				/*width: 345px;*/
+				width: 510px;
+				font-size:34px;
+				margin: 87px auto;
+				text-align: center;
+			}
+			/*修改密码成功后提示*/
+			.opacity{
+				width: 2000px;
+				height: 2000px;
+				position: absolute;
+				top:-31%;
+				left:-185%;
+				z-index: 2000;
+				background: rgba(78, 78, 78, 0.52);
+			}
+			
+			.pwdsuccess{
+				width: 600px;
+				height:428px;
+				position:absolute;
+				top:15%;
+				left:29%;
+				display: none;
+				background: #ddd;
+			}
+			 .pwdsuccess .pwd-login{
+				width: 500px;
+				margin:0 auto;
+			}
+		
+			/*提示文字*/
+			 .pwdsuccess>p{
+				/*width: 230px;*/
+				width: 443px;
+				font-size:34px;
+				margin: 87px auto;
+				text-align: center;
+			}
+			/*确定*/
+			 .pwdsuccess .pwd-login>p{
+				background: #05B570;
+			    color:#fff;
+			    margin: 0 auto;
+			    width:230px;
+			    height:52px;
+			    border-radius: 19px;
+			    text-align: center;
+			    line-height: 52px;
+			    font-size: 26px;
+			    cursor:pointer;
+			}
+			 .pwdsuccess .pwd-login>p:hover{
+				background: #059157;
+		}
+@media screen  and (max-width:1024px) {
+	.pwdsuccess{
+		top:7%;
+		left:37%;
+	}
+	#content{
+		width: 1024px;
+	}
+	#left{
+		width: 15%;
+	}
+	#left>ul{
+		width: 168px;
+	}
+	#right{
+		width: 80%;
+	}
+	#left .li a{
+		display: block;
+		margin:0 -14px 0 ;
+	}
+	/*.detailed{
+		height: 40px;
+		display:block;
+	}*/
+	table tbody tr td input, .detailed input, #pwd input{
+		margin:20px 2px 45px;
+	}
+	table tbody tr td input, .detailed input,#address2 input{
+		width: 223px;
+		height: 40px;
+	}
+	select{
+		margin:0 2px 20px;
+		width: 239px;
+	}
+	.hold button{
+		width: 223px;
+		margin:0 10px 20px;
+	}
+	#data{
+		width: 100%;
+	}
+	#data .data-header table thead tr th {
+		width: 192px;
+	}
+	#data-content{
+		width: 100%;
+	}
+	#data-content table tbody tr td{
+		width: 192px;
+	}
+}		
