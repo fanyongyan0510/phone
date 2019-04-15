@@ -47,8 +47,8 @@ $(function(){
 	                		</div>
 	                	</div>
                 	</div>
-					<a href="javascript:;" data-cart="cart" id="cart" @onclick="cc()">加入购物车</a>
-                    <a href="">立即购买</a>`)
+					<a href="javascript:;" data-cart="cart" id="cart" >加入购物车</a>
+                    <a href="javascript:;">立即购买</a>`)
 				
 				
 					var html=""
@@ -197,24 +197,20 @@ $(function(){
     	} 
  		
    
-
+		acart()
     }
 })
 }
 })
 	//加入购物车
-	window.onload=function(){
+	function acart(){
 		console.log(22222)
-		$("#cart").click(function cc(){
+		$("#cart").click(function(){
 				//加入购物车
-			var pid=this.lid;
-			console.log(pid);
-			function a(){
 				var pro=document.getElementById("pro").firstElementChild;
 				var pname=pro.firstElementChild;
 				var price=pro.lastElementChild;
-				var pid=this.lid;	
-				console.log(pid);
+				var pid=lid;	
 				var price=price.innerHTML.slice(1);
 				var pname=pname.textContent;
 				var count=document.getElementById("but").children[1];
@@ -254,7 +250,6 @@ $(function(){
 				xhr.open('get','/product/addcart?pid='+pid+"&price="+price+"&pname="+pname+"&count="+count,true);
 				xhr.send(null)
 			  
-		}
-		a()
+		
 	})
  }	

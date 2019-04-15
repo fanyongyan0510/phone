@@ -6,17 +6,14 @@ var uname=document.getElementById("uname");
 				div.innerHTML="";
             }
             var log=document.getElementById("login")
-            log.onclick=function(){
-			function login(){
+        log.onclick=function(){
 				
 					//1.创建异步对象
 					var xhr=new XMLHttpRequest();
-//				console.log('11111');
 					//2.绑定监听
 					xhr.onreadystatechange=function(){
 						if(xhr.readyState==4 && xhr.status==200){
 							var result=xhr.responseText;
-							console.log(result);
 							
 							if(result==1){
 								div.style.color="#2ad181";
@@ -38,11 +35,6 @@ var uname=document.getElementById("uname");
 					xhr.open('post','/user/login',true);
 					xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 					var formhtml='uname='+uname.value+'&upwd='+upwd.value;
-					console.log(formhtml);
 					//4.发送请求
 					xhr.send(formhtml);
-					console.log('5555');
-
-            }
-            login();
         }

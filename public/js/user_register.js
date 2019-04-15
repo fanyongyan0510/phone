@@ -1,9 +1,10 @@
 var uname=document.getElementById('uname');
-				var upwd=document.getElementById('upwd');
-				var upwd1=document.getElementById('upwd1');
-				var email=document.getElementById('email');
-				var phone=document.getElementById('phone');
-				var btn=document.getElementById('btn');
+var upwd=document.getElementById('upwd');
+var upwd1=document.getElementById('upwd1');
+var email=document.getElementById('email');
+var phone=document.getElementById('phone');
+var btn=document.getElementById('btn');
+var register=btn.children[0];
 				//2.绑定事件处理函数
 				uname.onfocus=upwd.onfocus=upwd1.onfocus=email.onfocus=phone.onfocus=function(){
 					var txt=this;
@@ -57,7 +58,7 @@ var uname=document.getElementById('uname');
 
 				
 				
-				function register(){
+				 register.onclick=function(){
 					var xhr=new XMLHttpRequest();
 					xhr.onreadystatechange=function(){
 						if(xhr.readyState==4 && xhr.status==200){

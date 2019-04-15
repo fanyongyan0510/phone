@@ -44,12 +44,15 @@ $.fn.slide = function(){
     var slideEle = $(this);
 
     var slideContent = slideEle.find('.slide-content');
+    console.log(slideContent);
     var slideNavLi = slideEle.find('.slide-nav li');
     var slideWidth = slideEle.width(); //显示窗口宽度
+    console.log(slideWidth);
     var timer = null;   //定时器
-    var time = 2000;    //轮播图切换事件(毫秒)
+    var time = 3000;    //轮播图切换事件(毫秒)
     var index = 0;  //当前索引值
-    var oldLength = slideEle.find('.slide-item').length;    //item初始长度
+    var oldLength = slideEle.find('.slide-item').length;
+    console.log(oldLength)    //item初始长度
     var length = oldLength*2;   //item复制后的长度 
     console.log(length)
     init();

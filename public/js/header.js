@@ -2,6 +2,7 @@
  * Created by tarena on 2019/2/23.
  */
 //登录成功显示退出登录
+window.onload=function(){
 function out(){
 	//获取数值  登录的名称
 	var uname=sessionStorage.getItem("uname");
@@ -36,7 +37,7 @@ function out(){
 	}
 }
 out();
-	
+
 
 
 //页头各个手机
@@ -203,4 +204,4 @@ suo.onclick=function(){
 	}
 	ss()
 }
-
+}

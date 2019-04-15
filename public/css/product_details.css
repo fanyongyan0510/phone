@@ -15,12 +15,7 @@ ul{
 
 /*ҳ���Ϸ�*/
 #section{
-    /*width: 1220px;*/
-
-    /*width: 95%;*/
     display: block;
-    /*margin: 49px auto;*/
-    border:1px solid #000;
 }
 #section:after,.small_ul:after,.right_color:after,.right_pz_a:after,.right_service_a:after,.right_count_a:after{
     content:'';
