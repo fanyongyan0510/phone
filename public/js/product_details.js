@@ -213,6 +213,7 @@ $(function(){
 				var pname=pro.firstElementChild;
 				var price=pro.lastElementChild;
 				var pid=this.lid;	
+				console.log(pid);
 				var price=price.innerHTML.slice(1);
 				var pname=pname.textContent;
 				var count=document.getElementById("but").children[1];
