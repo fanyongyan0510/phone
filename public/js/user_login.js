@@ -4,7 +4,9 @@ var uname=document.getElementById("uname");
 			var div=btn.previousElementSibling;
 			uname.onfocus=upwd.onfocus=function(){
 				div.innerHTML="";
-			}
+            }
+            var log=document.getElementById("login")
+            log.onclick=function(){
 			function login(){
 				
 					//1.创建异步对象
@@ -41,4 +43,6 @@ var uname=document.getElementById("uname");
 					xhr.send(formhtml);
 					console.log('5555');
 
-			}
+            }
+            login();
+        }
