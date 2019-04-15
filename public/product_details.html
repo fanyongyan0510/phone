@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="css/product_details.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/nav.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/product_details.js"></script>
+   	<script src="js/footer.js"></script>
 
 </head>
 <body  >
@@ -290,87 +294,5 @@
 		</section>
 	</footer>
     </div>
-
-    <!--<iframe src="footer.html" width="100%" height="970" frameborder="0"></iframe>-->
-    <script>
-    
-    	
-    	//大图
-//  	var smImg=document.getElementById("smImg");
-//  	var img=smImg.getElementsByTagName("img")
-//  	var divLg=document.getElementById("div-lg");
-//  	for (var i=0;i<img.length;i++){
-//    img[i].bb=i;
-//    img[i].onmousemove=function(){
-//        switch(this.bb){
-//            case 0:divLg.style.background='url("img/product/lg/800_800_1544693956003mp.png") no-repeat 800px 800px';
-//            break;
-//            case 1:divLg.style.background='url("img/product/lg/800_800_1544693879385.jpg") no-repeat';
-//            break;
-//            case 2:divLg.style.background='url("img/product/lg/800_800_1544693885268.jpg") no-repeat';
-//            break;
-//            case 3:divLg.style.background='url("img/product/lg/800_800_1544693895467.jpg") no-repeat';
-//            break;
-//        }
-//    }
-//}
-//      <!-- 放大镜-->
-//      <!--var mask=document.getElementById("mask");
-//      var smask=document.getElementById("super-mask");
-//      var divLg=document.getElementById("div-lg");
-//      //鼠标进入supermask,显示遮罩层和大图片
-//      // 鼠标移出supermask，隐藏遮罩层和大图片
-//      smask.onmouseover=function(){
-//          mask.className="position-absolute";
-//          divLg.className="position-absolute";
-//      }
-//      smask.onmouseout=function(){
-//          mask.className="position-absolute d-none";
-//          divLg.className="position-absolute d-none";
-//      }
-//      //mask跟随鼠标移动，并同步移动大div的背景图片位置
-//      var maxX=238;
-//      var maxY=238;
-//      smask.onmousemove=function(e){
-//      	var e=e;
-//          var left= e.offsetX-119;
-//          var top= e.offsetY-119;
-//          if(left<0){
-//              left=0;
-//          }else if(left>maxX){
-//              left=maxX;
-//          }
-//          if(top<0){
-//              top=0;
-//          }else if(top>maxY){
-//              top=maxY;
-//          }
-//          mask.style.left=left+"px";
-//          mask.style.top=top+"px";
-//          divLg.style.backgroundPositionX=(-13/9*left)+"px";
-//          divLg.style.backgroundPositionY=(-13/9*top)+"px";
-//      }
-//
-//      <!-- 页头上的图片-->
-//      <!--//获取所有的a标签
-//      var alA=document.getElementById("smImg").getElementsByTagName("a");
-//      //循环遍历所有a标签
-//      for(var i=0;i<alA.length;i++){
-//          //为a设置点击事件
-//          alA[i].onmousemove=function(){
-//              //把a标签中的href 中存储的图片路径给需要展示图片的标签。
-//              document.getElementById("mdImg").src=this.href;
-//              //阻止a链接的默认跳转。
-//              return false;
-//          }
-//      }
-
-    </script>
-    <script src="js/jquery-3.2.1.js"></script>
-  <!--  <script src="js/footer.js"></script>-->
-    <script src="js/header.js"></script>
-    <script src="js/product_details.js"></script>
-   	<script src="js/footer.js"></script>
-    <!--<script src="js/ajax.js"></script>-->
 </body>
 </html>

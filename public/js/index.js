@@ -51,7 +51,6 @@ var timer = null;   //定时器
 var time = 3000;    //轮播图切换事件(毫秒)
 var index = 0;  //当前索引值
 var oldLength = slideEle.find('.slide-item').length;    //item初始长度
-console.log(oldLength)
 var length = oldLength*2;   //item复制后的长度 
 
 init();
@@ -61,8 +60,6 @@ function init(){
 //将item复制一份加入到原item的后面，形成:原1、原2、原3、原4、...原末、复1、复2、复3、复4...复末,并定位到复1项
 index = oldLength;
 slideContent.append(slideContent.html()).css({width:slideWidth*length,left:-slideWidth*index});
-console.log(slideWidth*length)
-console.log(length)
 //鼠标悬浮事件
 slideEle.hover(function(){  //移除定时任务
     clearInterval(timer);
