@@ -170,7 +170,7 @@ $(function(){
 		    }
 		    get();
                
-               	var but=document.querySelector("but");
+        var but=document.querySelector("but");
     	var but=document.getElementById("but");
     	var is=but.getElementsByTagName("i");
     	for(var i of is){
@@ -206,7 +206,8 @@ $(function(){
 	window.onload=function(){
 		$("#cart").click(function cc(){
 				//加入购物车
-				var pid=this.lid;
+			var pid=this.lid;
+			console.log(pid);
 			function a(){
 				var pro=document.getElementById("pro").firstElementChild;
 				var pname=pro.firstElementChild;
