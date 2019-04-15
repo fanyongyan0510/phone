@@ -23,7 +23,7 @@ ul{
 }
 
 .slide{
-    width: 1900px;
+    width: 1910px;
     height: 900px;
     position: relative;
     overflow: hidden;
@@ -57,11 +57,11 @@ ul{
     top: 0;
     width: 99999px;
     height:900px;
-    
+
 }
 .slide .slide-content .slide-item{
     float: left;
-    width: 1900px;
+    width: 1910px;
     height: 900px;
 }
 .slide .slide-content .slide-item>img{
