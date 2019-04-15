@@ -51,7 +51,7 @@ $.fn.slide = function(){
     var index = 0;  //当前索引值
     var oldLength = slideEle.find('.slide-item').length;    //item初始长度
     var length = oldLength*2;   //item复制后的长度 
-
+    console.log(length)
     init();
 
     //初始化
@@ -61,7 +61,6 @@ $.fn.slide = function(){
         slideContent.append(slideContent.html()).css({width:slideWidth*length,left:-slideWidth*index});
         console.log(slideWidth*length)
         console.log(-slideWidth*length)
-        console.log(length)
         //鼠标悬浮事件
         slideEle.hover(function(){  //移除定时任务
             clearInterval(timer);

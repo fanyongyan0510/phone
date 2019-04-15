@@ -57,7 +57,7 @@ var uname=document.getElementById('uname');
 
 				
 				
-				function login(){
+				function register(){
 					var xhr=new XMLHttpRequest();
 					xhr.onreadystatechange=function(){
 						if(xhr.readyState==4 && xhr.status==200){

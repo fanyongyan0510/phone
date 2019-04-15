@@ -2,8 +2,7 @@ var lid=location.search.split("=")[1];
 
 $(function(){
 	console.log(11111)
-    if(location.search!==""){
-        
+    if(location.search!==""){ 
         $.ajax({
             url:"/product/details",
             type:"get",
