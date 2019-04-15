@@ -63,7 +63,6 @@ var register=btn.children[0];
 					xhr.onreadystatechange=function(){
 						if(xhr.readyState==4 && xhr.status==200){
 							var result=xhr.responseText;
-							console.log(result)
 							var div=btn.previousElementSibling
 							if(result==1){
 								div.style.color="#2ad181";

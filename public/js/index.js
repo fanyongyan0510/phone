@@ -29,32 +29,16 @@ function add(){
 }     
 add(); 
 // 轮播  
-// window.onload=function(){
-// //   	$(function(){
-// //     $('.slide').slide();
-// // });
-//           // autoMove("img","span");
-//       $(function(){
-//     $('.slide').slide();
-// });    
-// }
-
-
 $.fn.slide = function(){
     var slideEle = $(this);
-
     var slideContent = slideEle.find('.slide-content');
-    console.log(slideContent);
     var slideNavLi = slideEle.find('.slide-nav li');
     var slideWidth = slideEle.width(); //显示窗口宽度
-    console.log(slideWidth);
     var timer = null;   //定时器
     var time = 3000;    //轮播图切换事件(毫秒)
     var index = 0;  //当前索引值
-    var oldLength = slideEle.find('.slide-item').length;
-    console.log(oldLength)    //item初始长度
+    var oldLength = slideEle.find('.slide-item').length;   //item初始长度
     var length = oldLength*2;   //item复制后的长度 
-    console.log(length)
     init();
 
     //初始化
@@ -62,8 +46,6 @@ $.fn.slide = function(){
         //将item复制一份加入到原item的后面，形成:原1、原2、原3、原4、...原末、复1、复2、复3、复4...复末,并定位到复1项
         index = oldLength;
         slideContent.append(slideContent.html()).css({width:slideWidth*length,left:-slideWidth*index});
-        console.log(slideWidth*length)
-        console.log(-slideWidth*length)
         //鼠标悬浮事件
         slideEle.hover(function(){  //移除定时任务
             clearInterval(timer);
