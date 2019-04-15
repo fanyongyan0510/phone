@@ -55,7 +55,7 @@ ul{
     position: relative;
     z-index: 1;
     top: 0;
-    /* width: 99999px; */
+    width: 99999px;
     height:900px;
 }
 .slide .slide-content .slide-item{
