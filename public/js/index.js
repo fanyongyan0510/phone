@@ -29,15 +29,15 @@ function add(){
 }     
 add(); 
 // 轮播  
-window.onload=function(){
-//   	$(function(){
+// window.onload=function(){
+// //   	$(function(){
+// //     $('.slide').slide();
+// // });
+//           // autoMove("img","span");
+//       $(function(){
 //     $('.slide').slide();
-// });
-          // autoMove("img","span");
-      $(function(){
-    $('.slide').slide();
-});    
-}
+// });    
+// }
 
 
 $.fn.slide = function(){
@@ -129,6 +129,9 @@ slideNavLi.removeClass('active').eq(index%oldLength).addClass('active');
 }
 
 }
+$(function(){
+    $('.slide').slide();
+}); 
 // function autoMove(lImg,lSpan){
 //     var parent=document.getElementById("parent")
 //     var imgs=parent.getElementsByTagName(lImg);
