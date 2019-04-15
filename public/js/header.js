@@ -40,7 +40,7 @@ out();
 
 
 //页头各个手机
-function index(){
+function indexs(){
     var xhr=new XMLHttpRequest();
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4 && xhr.status==200){
@@ -115,7 +115,7 @@ function index(){
     xhr.open('get','/product/index',true);
     xhr.send(null);
 }
-index();
+indexs();
 
 
     
