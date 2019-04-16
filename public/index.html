@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
-    
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
     <script src="js/footer.js"></script>
@@ -115,33 +115,36 @@
     <!-- 主体->
     <!-- 轮播图-->
     <div id="center">
-        <div class="slide">
-            <!-- 导航点 -->
-             <ul class="slide-nav">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-             </ul>
-             <!-- /导航点 -->
-             <!-- 轮播图 -->
-             <div class="slide-content" id="nn">
-                <!-- <div class="slide-item"> -->
-                            <!-- <a href="">
-                                <img src="z3bg.jpg" alt="图片一">
-                            </a>
-                    -->
-                <!-- </div> -->
-               
-             </div>
-             <!-- /轮播图 -->
-             <!-- 按钮 -->
-             <a href="javascript:void(0);" class="slide-btn prev"></a>
-             <a href="javascript:void(0);" class="slide-btn next"></a>
-             <!-- /按钮 -->
-        </div>
-        <div   class="middle">
+        <div class="apple-banner">
+            <div class="swiper-container">
+              <div class="swiper-wrapper" id="swi">
+                <!-- <div class="swiper-slide slide1" data-swiper-slide-index="0">
+                    <a href="">
+                        <img src="z3bg.jpg">
+                    </a>
+                  
+                </div>
+                <div class="swiper-slide slide2" data-swiper-slide-index="1" >
+                   <img src="u1bg.jpg">
+                </div>
+                <div class="swiper-slide slide3" data-swiper-slide-index="2">
+                  <img src="vivo.jpg">
+                  
+                </div> -->
+              </div>
+              <div class="swiper-button-prev"><span></span></div>
+              <div class="swiper-button-next"><span></span></div>
+              <ul class="swiper-pagination autoplay swiper-pagination-clickable swiper-pagination-bullets">
+                      <li class="swiper-pagination-bullet"><span><i></i></span></li>
+                      <li class="swiper-pagination-bullet"><span><i></i></span></li>
+                      <li class="swiper-pagination-bullet swiper-pagination-bullet-active"><span><i></i></span></li>
+                      <li class="swiper-pagination-bullet swiper-pagination-bullet-active"><span><i></i></span></li>
+                      <li class="swiper-pagination-bullet swiper-pagination-bullet-active"><span><i></i></span></li>
+                  </ul>
+            </div>
+          </div>
+          <!-- 轮播下方图片 -->
+        <div class="middle">
             <ul id="index" class="middle_ul">
              
             </ul>

@@ -22,78 +22,100 @@ ul{
     clear:both;
 }
 
-.slide{
-    width: 1910px;
-    height: 900px;
-    position: relative;
-    overflow: hidden;
+/* 轮播 */
+.apple-banner a{display:block; height:900px;}
+.apple-banner {
+	width: 100%;
+	height: 900px;
+	overflow: hidden;
 }
-/* 导航点 */
-.slide .slide-nav{
-    position: absolute;
-    z-index: 2;
-    bottom: 13px;
-    left:950px;
+.apple-banner .swiper-container {
+	margin-top: -40px;
+	width: 100%;
+	height: 900px;
 }
-.slide .slide-nav>li{
-    width: 15px;
-    height: 15px;
-    border: 2px solid #CCC;
-    background: #ccc;
-    border-radius: 50%;
-    float: left;
-    margin-left: 5px;
-    cursor: pointer;
+.swiper-slide{
+	height:900px !important;
 }
-.slide .slide-nav>li.active{
-    background-color: #75757585;
-    border-color: #75757585;
+.swiper-button-prev,.swiper-button-next{
+	width: 15%;
+	height: 100%;
+	top:0;
+	background:none;
+	}
+.swiper-button-prev{
+	left:0;}	
+.swiper-button-next{
+	right:0;}	
+.swiper-button-prev span,.swiper-button-next span{
+	display:block;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	margin-top:-32px;
+	border-radius: 100%;
+	background: rgba(180,180,180,0.25) url(../img/bgimage3/arrow-left.png) no-repeat center 17px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
 }
-/* #导航点 */
-/* 轮播内容 */
-.slide .slide-content{
-    position: relative;
-    z-index: 1;
-    top: 0;
-    width: 99999px;
-    height:900px;
-
+.swiper-button-next span{
+	background: rgba(180,180,180,0.25) url(../img/bgimage3/arrow-right.png) no-repeat center -71px;
+	left:auto;
+	right:20px;
+	}
+.swiper-button-prev:hover span,.swiper-button-next:hover span{
+	opacity: .6;
 }
-.slide .slide-content .slide-item{
-    float: left;
-    width: 1910px;
-    height: 900px;
+/*分页器*/
+.apple-banner .swiper-pagination{
+	top:auto;
+	bottom:50px;
+	background:none;
 }
-.slide .slide-content .slide-item>img{
-    width: 100%;
-    height: 100%;
+.apple-banner  .swiper-pagination-bullet {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 0 3px;
+	cursor: pointer;
+	background: none;
+	border-radius:0;
+	opacity: 1;
 }
-/* #轮播内容 */
-/* 按钮 */
-.slide .slide-btn{
-    display: block;
-    width: 50px;
-    height: 100px;
-    position: absolute;
-    z-index: 2;
+.apple-banner  .swiper-pagination-bullet span {
+	width: 50px;
+	height: 2px;
+	display: block;
+	background: rgba(128,128,128,0.2);
 }
-.slide .prev{
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    margin: auto;
-    background:url(../img/bgimage3/arrow-left.png) no-repeat center center;
+.apple-banner .swiper-pagination-bullet-active span{
+    background:gray;
 }
-.slide .next{
-    top: 0%;
-    bottom: 0%;
-    right: 0%;
-    margin: auto;
-    background:url(../img/bgimage3/arrow-right.png) no-repeat center center;
+.apple-banner .autoplay .swiper-pagination-bullet-active span{
+    background: rgba(128,128,128,0.2);
 }
-.slide a:hover{
-    background-color: rgba(0,0,0,0.5);
+.apple-banner  .swiper-pagination-bullet i{
+	background: gray;
+	height: 2px;
+	transform:scaleX(0);
+	transform-origin: 0;
+	display: block;
 }
+.apple-banner .autoplay .firsrCurrent i{
+	transition:transform 2.9s linear;
+	transform:scaleX(1);
+}
+.apple-banner .autoplay .current i{
+	transition:transform 4s linear;
+	transform:scaleX(1);
+}
+.apple-banner  .autoplay .replace span{
+  background:gray;
+}
+/* 轮播下方图片 */
 .middle img{
 	height: 250px;
 }

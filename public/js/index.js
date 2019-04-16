@@ -9,15 +9,15 @@ function add(){
 	    	for(var i=0;i<result.length;i++){
 	        	var p=result[i];
 	        	html+=`
-	        		
-                <div class="slide-item">
-                        <a href="${p.href}" target="_blank">
-                            <img src="${p.img}" alt=""/>
-                        </a>
-                        </div>
+	        	<div class="swiper-slide slide1" data-swiper-slide-index="0">
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                  
+                </div>
                     `;
        	}
-			var div=document.getElementById("nn").innerHTML=html;
+			var div=document.getElementById("swi").innerHTML=html;
 			
            
             
@@ -29,142 +29,47 @@ function add(){
 }     
 add(); 
 // 轮播  
-$.fn.slide = function(){
-    var slideEle = $(this);
-    var slideContent = slideEle.find('.slide-content');
-    var slideNavLi = slideEle.find('.slide-nav li');
-    var slideWidth = slideEle.width(); //显示窗口宽度
-    var timer = null;   //定时器
-    var time = 3000;    //轮播图切换事件(毫秒)
-    var index = 0;  //当前索引值
-    var oldLength = slideEle.find('.slide-item').length;   //item初始长度
-    var length = oldLength*2;   //item复制后的长度 
-    init();
-
-    //初始化
-    function init(){
-        //将item复制一份加入到原item的后面，形成:原1、原2、原3、原4、...原末、复1、复2、复3、复4...复末,并定位到复1项
-        index = oldLength;
-        slideContent.append(slideContent.html()).css({width:slideWidth*length,left:-slideWidth*index});
-        //鼠标悬浮事件
-        slideEle.hover(function(){  //移除定时任务
-            clearInterval(timer);
-        },function(){   //添加定时任务    
-            setTimer();
-        });
-
-        //按钮点击事件
-        slideEle.find('.prev').click(function(){
-            if(!slideContent.is(':animated')){
-                index--;
-                change();
+window.onload = function() {
+    function c() {
+        a.bullets.eq(0).addClass("firsrCurrent")
+    }
+    var b, a = new Swiper(".apple-banner .swiper-container", {
+        autoplay: 3e3,
+        speed: 1e3,
+        loop: !0,
+        runCallbacksOnInit: !1,
+        watchSlidesProgress: !0,
+        pagination: ".apple-banner .swiper-pagination",
+        paginationClickable: !0,
+        paginationBulletRender: function(a, b, c) {
+            return '<li class="' + c + '"><span><i></i></span></li>'
+        },
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        onProgress: function(a) {
+            var b, c, d, e, f, g;
+            for (b = 0; b < a.slides.length; b++) {
+                for (c = a.slides.eq(b), d = c[0].progress, d > 0 ? (e = .9 * d * a.width, scale = 1 - .1 * d, d > 1 && (scale = .9), txtPositionX = 0, txtPositionY = 30 * d + "px") : (e = 0, scale = 1, txtPositionX = 1e3 * -d + "px", txtPositionY = 0), f = c.find(".txt"), g = 0; g < f.length; g++) f.eq(g).transform("translate3d(" + txtPositionX + "," + txtPositionY + ",0)");
+                c.transform("translate3d(" + e + "px,0,0) scale(" + scale + ")")
             }
-
-        }).end()
-        .find('.next').click(function(){
-            if(!slideContent.is(':animated')){
-                index++;
-                change();
-            }   
-        });
-
-        //导航点点击事件委托
-        slideNavLi.click(function(event){
-            index = $(event.target).index()+oldLength;
-            change();
-        });
-
-        setTimer();
-    }
-    //设置定时器
-    function setTimer(){
-        timer = setInterval(function(){
-            index++;
-            change();
-        },time);
-    }
-
-    function change(){
-        changeSlide();
-        changeNav();
-    }
-
-    //轮播图切换
-    function changeSlide(){
-/*      if(slideContent.is(':animated')){
-            return;
-        }*/
-        slideContent.animate({left:-slideWidth*index},500,function(){
-            //原1、原2、原3、原4、...原末、复1、复2、复3、复4...复末
-            if(index <= 0){ 
-                //当定位到原1时，在回调函数中将slideContent瞬间定位到复1
-                index = oldLength;
-                slideContent.css({left:-slideWidth*index});
-
-            }
-            if(index >=length-1){
-                //当定位到复末时，在回调中将slideContent瞬间定位到原末
-                index = oldLength-1;
-                slideContent.css({left:-slideWidth*index}); 
-            }
-        });
-    }
-    //导航点切换
-    function changeNav(){
-        slideNavLi.removeClass('active').eq(index%oldLength).addClass('active');
-    }
-
-}
-$(function(){
-    $('.slide').slide();
-});
-// function autoMove(lImg,lSpan){
-//     var parent=document.getElementById("parent")
-//     var imgs=parent.getElementsByTagName(lImg);
-//     var dspan=document.getElementById("dspan")
-//     var spans=dspan.getElementsByTagName(lSpan);
-//     function init(index){
-//         for(var i=0;i<imgs.length;i++){
-//             imgs[i].style.display="none";
-//             spans[i].style.background="#ccc";
-//         }
-// 	    imgs[index].style.display="block";
-//         spans[index].style.background="#75757585";
-        
-//     }
-//     init(0);
-//     var count=1;
-//     function c(){
-//         if(count==imgs.length){
-//             count=0;
-//         }
-//         init(count);
-//         count++;
-//     }
-//     scoll=setInterval(c,3000);
-//     var btnleft=document.getElementById("btnleft");
-//     var btnright=document.getElementById("btnright");
-//     btnleft.onclick=function(){
-//         clearInterval(scoll);
-//         if(count==0){
-//             count=imgs.length;
-//         }
-//         count--;
-//         init(count);
-//         scoll=setInterval(c,3000);
-//     }
-//     btnright.onclick=function(){
-//         clearInterval(scoll);
-//         c();
-//         scoll=setInterval(c,3000)
-//     }
-
-// }
- 
+        },
+        onSetTransition: function(a, b) {
+            var c, d, e;
+            for (c = 0; c < a.slides.length; c++) for (slide = a.slides.eq(c), slide.transition(b), d = slide.find(".txt"), e = 0; e < d.length; e++) d.eq(e).transition(b)
+        },
+        onSlideChangeStart: function(a) {
+            a.autoplaying && (a.bullets.eq(a.realIndex - 1).addClass("replace"), a.bullets.eq(a.realIndex - 1).removeClass("current firsrCurrent"), a.bullets.eq(a.realIndex).addClass("current"), 0 == a.realIndex && a.bullets.removeClass("replace"))
+        },
+        onAutoplayStop: function(a) {
+            a.$(".autoplay").removeClass("autoplay")
+        }
+    });
+    for (b = 0; b < a.slides.length; b++) a.slides[b].style.zIndex = b;
+    setTimeout(c, 1)
+};
 //首页商品
 function index(){
     var xhr=new XMLHttpRequest();
-
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4 && xhr.status==200){
             var result=JSON.parse(xhr.responseText);
