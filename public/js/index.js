@@ -1,74 +1,74 @@
 //首页
 //首页轮播
-// function add(){
-//     var xhr=new XMLHttpRequest();
-//    xhr.onreadystatechange=function(){
-// 	   if(xhr.readyState==4 && xhr.status==200){
-//            var result=JSON.parse(xhr.responseText);
-//         //    第一个
-//             var html="";
-// 	    	for(var i=0;i<result.length-4;i++){
-// 	        	var p=result[i];
-// 	        	html+=`
-//                     <a href="${p.href}" target="_blank">
-//                         <img src="${p.img}">
-//                     </a>
-//                     `;
-//        	}
-//             var div=document.getElementById("swi");
-//             div.children[0].innerHTML=html;
-// 			var html2="";
-// 	    	for(var i=1;i<result.length-3;i++){
-// 	        	var p=result[i];
-// 	        	html2+=`
-//                     <a href="${p.href}" target="_blank">
-//                         <img src="${p.img}">
-//                     </a>
-//                     `;
-//        	}
-//             var div=document.getElementById("swi");
-//             div.children[1].innerHTML=html2;
-//             var html3="";
-// 	    	for(var i=2;i<result.length-2;i++){
-// 	        	var p=result[i];
-// 	        	html3+=`
-//                     <a href="${p.href}" target="_blank">
-//                         <img src="${p.img}">
-//                     </a>
-//                     `;
-//        	}
-//             var div=document.getElementById("swi");
-//             div.children[2].innerHTML=html3;
-//             var html4="";
-// 	    	for(var i=3;i<result.length-1;i++){
-// 	        	var p=result[i];
-// 	        	html4+=`
-//                     <a href="${p.href}" target="_blank">
-//                         <img src="${p.img}">
-//                     </a>
-//                     `;
-//        	}
-//             var div=document.getElementById("swi");
-//             div.children[3].innerHTML=html4;
-//             var html5="";
-// 	    	for(var i=4;i<result.length-0;i++){
-// 	        	var p=result[i];
-// 	        	html5+=`
-//                     <a href="${p.href}" target="_blank">
-//                         <img src="${p.img}">
-//                     </a>
-//                     `;
-//        	}
-//             var div=document.getElementById("swi");
-//             div.children[4].innerHTML=html5;
+function add(){
+    var xhr=new XMLHttpRequest();
+   xhr.onreadystatechange=function(){
+	   if(xhr.readyState==4 && xhr.status==200){
+           var result=JSON.parse(xhr.responseText);
+        //    第一个
+            var html="";
+	    	for(var i=0;i<result.length-4;i++){
+	        	var p=result[i];
+	        	html+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[0].innerHTML=html;
+			var html2="";
+	    	for(var i=1;i<result.length-3;i++){
+	        	var p=result[i];
+	        	html2+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[1].innerHTML=html2;
+            var html3="";
+	    	for(var i=2;i<result.length-2;i++){
+	        	var p=result[i];
+	        	html3+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[2].innerHTML=html3;
+            var html4="";
+	    	for(var i=3;i<result.length-1;i++){
+	        	var p=result[i];
+	        	html4+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[3].innerHTML=html4;
+            var html5="";
+	    	for(var i=4;i<result.length-0;i++){
+	        	var p=result[i];
+	        	html5+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[4].innerHTML=html5;
             
-// 	    }
+	    }
        
-// 	} 
-//     xhr.open('get','/product/carousel',true);
-//     xhr.send(null);
-// }     
-// add(); 
+	} 
+    xhr.open('get','/product/carousel',true);
+    xhr.send(null);
+}     
+add(); 
 // 轮播  
 
 //首页商品
