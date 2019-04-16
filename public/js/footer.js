@@ -1,7 +1,7 @@
 /**
  * Created by tarena on 2019/2/20.
  */
-$(function(){
+window.onload=function(){
     var data1=document.querySelector('[data-toggle=a]');
     var data2=document.querySelector('[data-toggle=b]');
     var data3=document.querySelector('[data-toggle=c]');
@@ -18,4 +18,4 @@ $(function(){
     data4.onclick=function(){
         window.location.href ='product_details.html';
     }
-})
+}
