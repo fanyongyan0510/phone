@@ -42,13 +42,13 @@ body {
 	top: 50%;
 	margin-top:-32px;
 	border-radius: 100%;
-	background: rgba(180,180,180,0.25) url(../img/bgimage3/arrow-left.png) no-repeat center 17px;
+	background: rgba(180,180,180,0.25) url(../img/bgimage3/arrows.png) no-repeat center 17px;
 	opacity: 0;
 	-webkit-transition: opacity 0.5s ease;
 	transition: opacity 0.5s ease;
 }
 .swiper-button-next span{
-	background:rgba(114, 113, 113, 0.73) url(../img/bgimage3/arrow-right.png) no-repeat center -71px;
+	background:rgba(114, 113, 113, 0.73) url(../img/bgimage3/arrows.png) no-repeat center -71px;
 	left:auto;
 	right:20px;
 	}
