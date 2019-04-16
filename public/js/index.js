@@ -17,7 +17,7 @@ function add(){
        	}
             var div=document.getElementById("swi");
             div.children[0].innerHTML=html;
-			var html="";
+			var html2="";
 	    	for(var i=1;i<result.length-3;i++){
 	        	var p=result[i];
 	        	html+=`
@@ -27,8 +27,8 @@ function add(){
                     `;
        	}
             var div=document.getElementById("swi");
-            div.children[1].innerHTML=html;
-            var html="";
+            div.children[1].innerHTML=html2;
+            var html3="";
 	    	for(var i=2;i<result.length-2;i++){
 	        	var p=result[i];
 	        	html+=`
@@ -38,8 +38,8 @@ function add(){
                     `;
        	}
             var div=document.getElementById("swi");
-            div.children[2].innerHTML=html;
-            var html="";
+            div.children[2].innerHTML=html3;
+            var html4="";
 	    	for(var i=3;i<result.length-1;i++){
 	        	var p=result[i];
 	        	html+=`
@@ -49,8 +49,8 @@ function add(){
                     `;
        	}
             var div=document.getElementById("swi");
-            div.children[3].innerHTML=html;
-            var html="";
+            div.children[3].innerHTML=html4;
+            var html5="";
 	    	for(var i=4;i<result.length-0;i++){
 	        	var p=result[i];
 	        	html+=`
@@ -60,7 +60,7 @@ function add(){
                     `;
        	}
             var div=document.getElementById("swi");
-            div.children[4].innerHTML=html;
+            div.children[4].innerHTML=html5;
             
 	    }
        
