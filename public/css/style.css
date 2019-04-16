@@ -9,19 +9,19 @@ body {
 	color: #333;
 	font-size: 13px;
 }
-.apple-banner a{display:block; height:900px;}
+.apple-banner a{display:block; height:966px;}
 .apple-banner {
 	width: 100%;
-	height: 900px;
+	height: 966px;
 	overflow: hidden;
 }
 .apple-banner .swiper-container {
 	margin-top: -40px;
 	width: 100%;
-	height: 900px;
+	height: 966px;
 }
 .swiper-slide{
-	height:900px !important;
+	height:966px !important;
 }
 .swiper-button-prev,.swiper-button-next{
 	width: 15%;
