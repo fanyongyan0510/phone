@@ -1,6 +1,6 @@
 //首页
 //首页轮播
-window.onload=function(){
+function caro(){
     var xhr=new XMLHttpRequest();
    xhr.onreadystatechange=function(){
 	   if(xhr.readyState==4 && xhr.status==200){
@@ -89,8 +89,8 @@ window.onload=function(){
 	} 
     xhr.open('get','/product/carousel',true);
     xhr.send(null);
-}     
- 
+}
+    caro();
 // 轮播  
 
 //首页商品
