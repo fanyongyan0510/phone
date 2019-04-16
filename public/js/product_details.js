@@ -1,7 +1,6 @@
 var lid=location.search.split("=")[1];
 
 $(function(){
-	console.log(11111)
     if(location.search!==""){ 
         $.ajax({
             url:"/product/details",
@@ -204,7 +203,6 @@ $(function(){
 })
 	//加入购物车
 	function acart(){
-		console.log(22222)
 		$("#cart").click(function(){
 				//加入购物车
 				var pro=document.getElementById("pro").firstElementChild;

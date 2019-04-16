@@ -5,21 +5,62 @@ function add(){
    xhr.onreadystatechange=function(){
 	   if(xhr.readyState==4 && xhr.status==200){
            var result=JSON.parse(xhr.responseText);
+        //    第一个
             var html="";
-	    	for(var i=0;i<result.length;i++){
+	    	for(var i=0;i<result.length-4;i++){
 	        	var p=result[i];
 	        	html+=`
-	        	<div class="swiper-slide slide1" data-swiper-slide-index="0">
                     <a href="${p.href}" target="_blank">
                         <img src="${p.img}">
                     </a>
-                  
-                </div>
                     `;
        	}
-			var div=document.getElementById("swi").innerHTML=html;
-			
-           
+            var div=document.getElementById("swi");
+            div.children[0].innerHTML=html;
+			var html="";
+	    	for(var i=1;i<result.length-3;i++){
+	        	var p=result[i];
+	        	html+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[1].innerHTML=html;
+            var html="";
+	    	for(var i=2;i<result.length-2;i++){
+	        	var p=result[i];
+	        	html+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[2].innerHTML=html;
+            var html="";
+	    	for(var i=3;i<result.length-1;i++){
+	        	var p=result[i];
+	        	html+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[3].innerHTML=html;
+            var html="";
+	    	for(var i=4;i<result.length-0;i++){
+	        	var p=result[i];
+	        	html+=`
+                    <a href="${p.href}" target="_blank">
+                        <img src="${p.img}">
+                    </a>
+                    `;
+       	}
+            var div=document.getElementById("swi");
+            div.children[4].innerHTML=html;
             
 	    }
        
